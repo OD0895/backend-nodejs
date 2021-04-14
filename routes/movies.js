@@ -6,6 +6,7 @@ const {
 	createMovieSchema,
 	updateMovieSchema,
 } = require('../utils/schemas/movies');
+
 const validationHandler = require('../utils/middleware/validationHandler');
 
 function moviesApi(app) {
