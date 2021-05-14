@@ -27,6 +27,4 @@ class UsersService {
   }
 }
 
-module.exports = {
-  UsersService
-}
+module.exports = UsersService
