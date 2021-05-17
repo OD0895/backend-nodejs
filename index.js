@@ -3,6 +3,8 @@ const app = express();
 const cors = require('cors');
 
 const { config } = require('./config/index');
+
+const authApi = require('./routes/auth');
 const moviesApi = require('./routes/movies.js');
 const userMoviesApi = require('./routes/userMovies.js');
 
@@ -25,6 +27,7 @@ app.use(cors())
 app.use(express.json());
 
 //Routes
+authApi(app);
 moviesApi(app);
 userMoviesApi(app);
 
